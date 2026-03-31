@@ -1,0 +1,22 @@
+_version = 0.1
+
+[unit1_classes]
+activity_id = "oop-ex-classes"
+
+[unit2_inheritance]
+activity_id = "oop-ex-inheritance"
+
+[unit3_polymorphism]
+activity_id = "oop-ex-polymorphism"
+
+[unit4_encapsulation]
+activity_id = "oop-ex-encapsulation"
+
+[unit5_abstraction]
+activity_id = "oop-ex-abstraction"
+
+[unit6_binding]
+activity_id = "oop-ex-binding"
+
+[unit7_messaging]
+activity_id = "oop-ex-messaging"

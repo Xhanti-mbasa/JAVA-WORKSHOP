@@ -1,6 +1,9 @@
 # Ignore the teacher grading server and related answer keys
 teacher-server/
 
+# Never commit secrets
+.env
+
 # Ignore Python virtual environments
 venv/
 .venv/
