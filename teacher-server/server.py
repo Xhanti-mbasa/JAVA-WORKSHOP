@@ -11,6 +11,10 @@ app = Flask(__name__)
 TEACHER_DIR = os.path.dirname(os.path.abspath(__file__))
 HIDDEN_TESTS_DIR = os.path.join(TEACHER_DIR, 'hidden-tests')
 
+@app.route('/', methods=['GET'])
+def index():
+    return "LMS Bot Server is running! Configure your GitHub webhook to point to /webhook."
+
 @app.route('/webhook', methods=['POST'])
 def handle_webhook():
     data = request.json
