@@ -1,0 +1,17 @@
+name: Notify Teacher
+on: [push]
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Code Execution Request to Teacher Server
+        run: |
+          # The teacher will provide their ngrok URL below.
+          # Example: https://1234abcd.ngrok.app/webhook
+          TEACHER_WEBHOOK_URL="https://YOUR_NGROK_URL_HERE.ngrok-free.app/webhook"
+          
+          echo "Sending notification to teacher server ($TEACHER_WEBHOOK_URL)..."
+          
+          curl -X POST -H "Content-Type: application/json" \
+               -d "{\"repo\": \"${{ github.repository }}\", \"branch\": \"${{ github.ref_name }}\", \"commit\": \"${{ github.sha }}\"}" \
+               $TEACHER_WEBHOOK_URL
