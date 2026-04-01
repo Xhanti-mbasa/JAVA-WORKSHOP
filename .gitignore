@@ -1,0 +1,20 @@
+# Ignore the teacher grading server and related answer keys
+teacher-server/
+
+# Never commit secrets
+.env
+
+# Ignore Python virtual environments
+venv/
+.venv/
+__pycache__/
+
+# Ignore Maven/Java target builds
+student-repo/target/
+student-repo/src/main/java/oop/workshop/unit7_messaging
+student-repo/src/main/java/oop/workshop/unit6_binding
+student-repo/src/main/java/oop/workshop/unit5_abstraction
+student-repo/src/main/java/oop/workshop/unit4_encapsulation
+student-repo/src/main/java/oop/workshop/unit3_polymorphism
+*.class
+
